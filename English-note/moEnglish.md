@@ -420,10 +420,150 @@ find（找出）&emsp;&emsp;&nbsp;&nbsp;&nbsp;spare（拔出）
 例2：<u>I will buy it for you.</u>  
 &emsp;&emsp;&nbsp;&nbsp;我会买给你。
 
-### Further Study】名词短语、名词性从句也可当直接宾语。
+### 【Further Study】名词短语、名词性从句也可当直接宾语。
 例1：<u>He told me how to quit/stop smoking.</u>  
 &emsp;&emsp;&nbsp;&nbsp;他告诉我如何戒烟。
 > how to v.  → 名词短语
 
 例2：She told us <u>that she would leave for America soon.</u>.  
 &emsp;&emsp;&nbsp;&nbsp;她告诉我们她不久后将前往美国。
+
+## 第16节-第五句型A
+### 5. 第五句型：S. + V. + O. + C.（主语+动词+宾语+宾语补语）
+#### （1）此句型中的动词需有宾语，且宾语之后需要宾语补语说明
+例1：He found that stranger a spy.  
+&emsp;&emsp;&nbsp;&nbsp;他发现那陌生人是间谍。
+
+例2：We must always keep the classroom clean.  
+&emsp;&emsp;&nbsp;&nbsp;我们必须随时保持教室干净。
+
+例3：The rapid development of space technology enables us to explore its mysteries.  
+&emsp;&emsp;&nbsp;&nbsp;太空科技的快速发展，使我们得以探索它的奥秘。
+
+例4：I'm going to paint my house white tomorrow.  
+&emsp;&emsp;&nbsp;&nbsp;明天我要把房子漆成白色。
+
+##### 【Further Study】宾语补语的性质如下
+**1.名词**  
+例：They call the girl <u>Jenny</u>.  
+&emsp;&emsp;他们叫那个女孩Jenny。
+
+**2.形容词**  
+例：I found the task <u>very dangerous</u>.  
+&emsp;&emsp;我发现那个任务很危险。
+
+**3.不定式**  
+例：We believe him <u>to be</u> an honest man.  
+&emsp;&emsp;我们相信他是个诚实的人。
+
+**4.现在分词**  
+例：I heard the boys <u>singing</u> in the classroom.  
+&emsp;&emsp;我听到那群男孩在教室里唱歌。
+
+**5.过去分词**  
+例：She kept all the windows <u>closed</u>.  
+&emsp;&emsp;她把所有的窗户都关上了。  
+> 及物动词必有受词（宾语），若无宾语一定是被动
+
+**6.短语**  
+例：Please make yourself <u>at home</u>.  
+&emsp;&emsp;请不要拘束。
+
+**7.名词性从句**  
+例：My mother made me <u>what I am</u> today.  
+&emsp;&emsp;我的母亲造就了今天的我。
+
+## 第17节-第五句型B
+### （2）第五句型的动词类型
+- **表“称呼”**
+
+---
+→name（取名）&emsp;&emsp;nickname（取小名）
+
+&emsp;call（称呼）&emsp;&emsp;&emsp;&nbsp;entitle（定书名）
+
+---
+例：The parents named their son Thomas.  
+&emsp;&emsp;这对父母亲给他们的儿子取名为Thomas。
+
+- **表“选举、指派”**
+
+---
+→vote（投票）&emsp;&emsp;&emsp;&nbsp;&nbsp;elect（选举）
+
+&emsp;appoint（任命）&emsp;&emsp;make（造就）
+
+---
+例1：They appointed him manager.  
+&emsp;&emsp;&nbsp;&nbsp;他们任命他为经理。
+
+例2：The good weather makes Spain such a popular tourist attraction.  
+&emsp;&emsp;&nbsp;&nbsp;好天气使得西班牙成为如此受欢迎的观光胜地。
+
+- **表“动作的结果”**
+
+---
+→paint（漆油漆）&emsp;&emsp;bake（烘焙）&emsp;&emsp;boil（水煮）
+
+&emsp;burn（燃烧）&emsp;&emsp;&emsp;beat（打击）&emsp;&emsp;&nbsp;color（上色）
+
+&emsp;cut（修剪）&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;dye（染色）&emsp;&emsp;&nbsp;&nbsp;&nbsp;lick（舔）
+
+&emsp;wash（洗涤）&emsp;&emsp;&nbsp;&nbsp;&nbsp;wipe（擦拭）
+
+---
+例1：We painted the fence white.  
+&emsp;&emsp;&nbsp;&nbsp;我们将篱笆漆成白色。
+
+例2：She cut her hair short.  
+&emsp;&emsp;&nbsp;&nbsp;她将头发剪短。
+
+## 第18节-第五句型C
+- **使役动词**叫...（人）做...（事）
+	1.make / have + O +<u> V（主动）</u>&emsp;/&emsp;<u>p.p（被动）</u>
+	2.let + O + <u> V（主动）</u>&emsp;/&emsp;<u>be p.p（被动）</u>
+	3.get + O + to <u>V（主动）</u>&emsp;/&emsp;<u>p.p（被动）</u>
+
+例1：I cannot make myself <u>understood</u> in English.  
+&emsp;&emsp;&nbsp;&nbsp;我说的英文没有人听得懂。
+> I cannot make myself <u>understand</u> English.
+
+例2：Just let bygones <u>be</u> bygones and be friends again.  
+&emsp;&emsp;&nbsp;&nbsp;往事不要再提，重归于好吧。
+
+例3：I got my brother <u>to drive</u> me to the station.  
+&emsp;&emsp;&nbsp;&nbsp;我要我哥哥开车送我去车站。
+
+## 第19节-第五句型D
+- **感官动词**
+
+> feel, smell  
+> see, watch, look at  
+> notice, observe, hear, listen to
+
+> 感官动词 + O. + <u>V/Ving（主动）</u> / <u>p.p（被动）</u>
+
+例1：<u>I heard my mom humming a tune.</u>  
+&emsp;&emsp;&nbsp;&nbsp;我听到我母亲在哼着曲调。
+
+例2：<u>I heard something crash against the wall.</u>  
+&emsp;&emsp;&nbsp;&nbsp;我听到有东西砸在墙上碎掉的声音。
+
+例3：<u>I saw the boy punished by his father.</u>  
+&emsp;&emsp;&nbsp;&nbsp;我看见那男孩被他父亲处罚。
+
+- **半使役动词**
+
+> keep, leave  
+> find, catch
+
+> 半使役动词 + O. + <u>Ving（主动）</u> / <u>p.p（被动）</u> / <u>形容词（状态）</u>
+
+例1：<u>He left the door open.</u>  
+&emsp;&emsp;&nbsp;&nbsp;他让门开着。
+
+例2：<u>He found the money hidden in the closet.</u>  
+&emsp;&emsp;&nbsp;&nbsp;他发现钱藏在柜子里。
+
+例3：<u>The thief was caught red-handed.</u>  
+&emsp;&emsp;&nbsp;&nbsp;这个贼当场被逮。
