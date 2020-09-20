@@ -71,7 +71,7 @@
 ```
 &emsp;&emsp;上面代码中，`<img>`标签有两个属性：src和width。属性值一般放在双引号里面，这不是必需的，但推荐总是使用双引号。
 
-&emsp;&emsp;注意，属性名是大小写不敏感的，onclick和onClick是同一个属性。
+&emsp;&emsp;注意，**属性名是大小写不敏感的**，onclick和onClick是同一个属性。
 
 ## 3、网页的基本标签
 &emsp;&emsp;符合语法标准的网页，应该满足下面的基本结构。
@@ -156,7 +156,7 @@
 &emsp;&emsp;注意，声明的编码方式，应该与网页实际的编码方式一致，即声明了`utf-8`，网页就应该使用 `UTF-8` 编码保存。
 
 ### 3.5、`<title>`
-&emsp;&emsp;&emsp;&emsp;`<title>`标签用于指定网页的标题，会显示在浏览器窗口的标题栏。
+&emsp;&emsp;`<title>`标签用于指定网页的标题，会显示在浏览器窗口的标题栏。
 ```html
 <head>
   <title>网页标题</title>
@@ -219,12 +219,12 @@ https://www.example.com:80/path/to/myfile.html?key1=value1&key2=value2#anchor
 ### 2.1、协议
 &emsp;&emsp;协议（scheme）是浏览器请求服务器资源的方法，上例是https:// 的部分，表示使用 HTTPS 协议。
 
-&emsp;&emsp;互联网支持多种协议，必须指明网址使用哪一种协议，默认是 HTTP 协议。也就是说，如果省略协议，直接在浏览器地址栏输入www.example.com ，那么浏览器默认会访问http://www.example.com 。HTTPS 是 HTTP 的加密版本，出于安全考虑，越来越多的网站使用这个协议。
+&emsp;&emsp;互联网支持多种协议，必须指明网址使用哪一种协议，默认是 HTTP 协议。也就是说，如果省略协议，直接在浏览器地址栏输入github.com/LBJhui ，那么浏览器默认会访问http://github.com/LBJhui 。HTTPS 是 HTTP 的加密版本，出于安全考虑，越来越多的网站使用这个协议。
 
-&emsp;&emsp;HTTP 和 HTTPS 的协议名称后面，紧跟着一个冒号和两个斜杠（://）。其他协议不一定如此，邮件地址协议mailto:的协议名后面只有一个冒号，比如mailto:foo@example.com 。
+&emsp;&emsp;HTTP 和 HTTPS 的协议名称后面，紧跟着一个冒号和两个斜杠（://）。其他协议不一定如此，邮件地址协议mailto:的协议名后面只有一个冒号，比如mailto:690306059@qq.com 。
 
 ### 2.2、主机
-&emsp;&emsp;主机（host）是资源所在的网站名或服务器的名字，又称为域名。上例的主机是www.example.com 。
+&emsp;&emsp;主机（host）是资源所在的网站名或服务器的名字，又称为域名。上例的主机是 github.com 。
 
 &emsp;&emsp;有些主机没有域名，只有 IP 地址，比如192.168.2.15。这种情况常常出现在局域网。
 
@@ -241,7 +241,7 @@ https://www.example.com:80/path/to/myfile.html?key1=value1&key2=value2#anchor
 &emsp;&emsp;路径可能只包含目录，不包含文件名，比如/foo/，甚至结尾的斜杠都可以省略。这时，服务器通常会默认跳转到该目录里面的index.html文件（即等同于请求/foo/index.html），但也可能有其他的处理（比如列出目录里面的所有文件），这取决于服务器的设置。一般来说，访问www.example.com 这个网址，很可能返回的是网页文件www.example.com/index.html 。
 
 ### 2.5、查询参数
-&emsp;&emsp;&emsp;&emsp;查询参数（parameter）是提供给服务器的额外信息。参数的位置是在路径后面，两者之间使用?分隔，上例是?key1=value1&key2=value2。
+&emsp;&emsp;查询参数（parameter）是提供给服务器的额外信息。参数的位置是在路径后面，两者之间使用?分隔，上例是?key1=value1&key2=value2。
 
 &emsp;&emsp;查询参数可以有一组或多组。每组参数都是键值对（key-value pair）的形式，同时具有键名(key)和键值(value)，它们之间使用等号（=）连接。比如，key1=value就是一个键值对，key1是键名，value1是键值。
 
@@ -255,14 +255,19 @@ https://www.example.com:80/path/to/myfile.html?key1=value1&key2=value2#anchor
 ### 2.7、URL 字符
 &emsp;&emsp;URL 的各个组成部分，只能使用以下这些字符。
 
-&emsp;&emsp;26个英语字母（包括大写和小写）  
-&emsp;&emsp;10个阿拉伯数字  
-&emsp;&emsp;连词号（-）  
-&emsp;&emsp;句点（.）  
-&emsp;&emsp;下划线（_）  
+```
+26个英语字母（包括大写和小写）
+10个阿拉伯数字
+连词号（-）
+句点（.）
+下划线（_）
+```
+
 &emsp;&emsp;此外，还有18个字符属于 URL 的保留字符，只能在给定的位置出现。比如，查询参数的开头是问号（?），也就是说，问号只能出现查询参数的开头，出现在其他位置就是非法的，会导致网址解析错误。网址的其他部分如果要使用这些保留字符，必须使用它们的转义形式。
 
+
 &emsp;&emsp;URL 字符转义的方法是，在这些字符的十六进制 ASCII 码前面加上百分号（%）。下面是这18个字符及其转义形式。
+
 ```
 !：%21
 #：%23
@@ -283,6 +288,7 @@ $：%24
 [：%5B
 ]：%5D
 ```
+
 &emsp;&emsp;举例来说，有一个网页的 URL 是foo?bar.html，即文件里面包含一个问号，那么需要写成foo%3Fbar.html。
 
 &emsp;&emsp;URL 的合法字符，其实也可以采用这种转义方法，但是不建议使用。比如，字母a的十六进制 ASCII 码是61，转义形式后就是%61。因此，www.apple.com 又可以写成www.%61pple.com ，浏览器一样识别。
@@ -308,8 +314,8 @@ www.example.com/%e4%b8%ad%e5%9b%bd.html
 
 &emsp;&emsp;URL 还可以使用两个特殊简写，表示特定位置。
 
-&emsp;&emsp;.：表示当前目录，比如./a.html（当前目录下的a.html文件）  
-&emsp;&emsp;..：表示上级目录，比如../a.html（上级目录下的a.html文件）
+&emsp;&emsp;. ：表示当前目录，比如./a.html（当前目录下的a.html文件）  
+&emsp;&emsp;.. ：表示上级目录，比如../a.html（上级目录下的a.html文件）
 
 &emsp;&emsp;这两种简写可以多个连用，比如../../表示上两级目录。
 
@@ -338,7 +344,7 @@ www.example.com/%e4%b8%ad%e5%9b%bd.html
 
 &emsp;&emsp;属性名与标签名一样，不区分大小写，lang和LANG是同一个属性。
 
-&emsp;&emsp;属性名与属性值之间，通过等号=连接。属性值可以放在单引号或双引号之中，建议统一使用双引号。某些属性值可以不使用引号，但是建议不要这样写。
+&emsp;&emsp;属性名与属性值之间，通过等号`=`连接。属性值可以放在单引号或双引号之中，建议统一使用双引号。某些属性值可以不使用引号，但是建议不要这样写。
 
 &emsp;&emsp;有些属性是布尔属性，即属性值是一个布尔值，只有“打开”和“关闭”两种情况。这时属性值可以省略，只要添加了属性名，就表示打开该属性。
 ```html
@@ -566,8 +572,10 @@ $：&dollar;
 ^：&Hat;
 ±：&plusmn;
 空格：&nbsp;
-注意，上面最后一个特殊字符是空格，它也有对应的实体表示法。
 ```
+
+&emsp;&emsp;注意，上面最后一个特殊字符是空格，它也有对应的实体表示法。
+
 &emsp;&emsp;字符的数字表示法和实体表示法，都可以表示正常情况无法输入的字符，逃脱了浏览器的限制，所以英语里面称为“escape”，中文翻译为“字符的转义”。
 
 # 文本标签
@@ -666,7 +674,7 @@ Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz
 ```
 &emsp;&emsp;上面代码中，换行和连续空格都会由于`<pre>`标签，而被保留下来，浏览器按照原样输出。
 
-&emsp;&emsp;注意，HTML 标签在`<pre>`里面还是起作用的。`<pre>`只保留空格和换行，不会保留 HTML 标签。
+&emsp;&emsp;注意，HTML 标签在`<pre>`里面还是起作用的。**`<pre>`只保留空格和换行，不会保留 HTML 标签。**
 ```html
 <pre><strong>hello world</strong></pre>
 ```
@@ -709,7 +717,7 @@ Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz
 ```
 
 ## 10、`<u>`，`<s>`
-&emsp;&emsp;&emsp;&emsp;`<u>`标签是一个行内元素，表示对内容提供某种注释，提醒用户这里可能有问题，基本上只用来表示拼写错误。浏览器默认以下划线渲染内容。
+&emsp;&emsp;`<u>`标签是一个行内元素，表示对内容提供某种注释，提醒用户这里可能有问题，基本上只用来表示拼写错误。浏览器默认以**下划线**渲染内容。
 ```html
 <p>
 一个容易写错的成语是把<em>安分守己</em>写成<u>安份守己</u>。
@@ -719,7 +727,7 @@ Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz
 
 &emsp;&emsp;注意，`<u>`会产生下划线，由于链接也默认带有下划线，所以必须非常小心使用`<u>`标签，避免用户误以为可以点击。万一确有必要使用，最好使用 CSS 改变`<u>`的默认样式。
 
-&emsp;&emsp;`<s>`标签是一个行内元素，为内容加上删除线。
+&emsp;&emsp;`<s>`标签是一个行内元素，为内容加上**删除线**。
 ```html
 <p>今天特价商品：<s>三文鱼</s>（售完）</p>
 ```
@@ -800,7 +808,7 @@ Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz
 床前明月光，疑是地上霜。<mark>举头望明月，低头思故乡。</mark>
 </blockquote>
 ```
-&emsp;&emsp;&emsp;&emsp;除了标记感兴趣的文本，`<mark>`还可以用于在搜索结果中，标记出匹配的关键词。
+&emsp;&emsp;除了标记感兴趣的文本，`<mark>`还可以用于在搜索结果中，标记出匹配的关键词。
 
 &emsp;&emsp;注意，不要只为了高亮的效果，而使用这个标签，因为不能保证浏览器的处理方式。如果要保证高亮，还是要使用 CSS 样式。
 
@@ -850,6 +858,7 @@ Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz
 （2）`<address>`的内容不得有非联系信息，比如发布日期。
 （3）`<address>`不能嵌套，并且内部不能有标题标签（`<h1>`~`<h6>`），也不能有`<article>`、`<aside>`、`<section>`、`<nav>`、`<header>`、`<footer>`等标签。
 （4）通常，`<address>`会放在`<footer`>里面，下面是一个例子。
+
 ```html
 <footer>
   <address>
@@ -1130,7 +1139,7 @@ Hard Disk
 ```
 &emsp;&emsp;上面代码就定义了一个超级链接。浏览器显示“维基百科”，文字下面默认会有下划线，表示这是一个链接。用户点击后，浏览器跳转到href属性指定的网址。
 
-&emsp;&emsp;&emsp;&emsp;`<a>`标签内部不仅可以放置文字，也可以放置其他元素，比如段落、图像、多媒体等等。
+&emsp;&emsp;`<a>`标签内部不仅可以放置文字，也可以放置其他元素，比如段落、图像、多媒体等等。
 ```html
 <a href="https://www.jianshu.com/u/01d07de71a9a">
   <img src="LBJhui.jpg">
@@ -1238,7 +1247,7 @@ Hard Disk
 
 **（8）type**
 
-&emsp;&emsp;&emsp;&emsp;type属性给出链接 URL 的 MIME 类型，比如到底是网页，还是图像或文件。它也是纯粹提示性的属性，没有实际功能。
+&emsp;&emsp;type属性给出链接 URL 的 MIME 类型，比如到底是网页，还是图像或文件。它也是纯粹提示性的属性，没有实际功能。
 ```html
 <a
   href="LBJhui.jpg"
@@ -1585,7 +1594,7 @@ console.log('hello world');
 ### （5）crossorigin
 &emsp;&emsp;有时，图片和网页属于不同的网站，网页加载图片就会导致跨域请求，对方服务器可能要求跨域认证。crossorigin属性用来告诉浏览器，是否采用跨域的形式下载图片，默认是不采用。
 
-&emsp;&emsp;&emsp;&emsp;简单说，只要打开了这个属性，HTTP 请求的头信息里面，就会加入origin字段，给出请求发出的域名，不打开这个属性就不加。
+&emsp;&emsp;简单说，只要打开了这个属性，HTTP 请求的头信息里面，就会加入origin字段，给出请求发出的域名，不打开这个属性就不加。
 
 &emsp;&emsp;一旦打开该属性，它可以设为两个值。
 
@@ -1636,7 +1645,8 @@ console.log('hello world');
 ```html
 <img src="foo.jpg">
 ```
-&emsp;&emsp;&emsp;&emsp;上面代码在桌面端和手机上，插入的都是图像文件foo.jpg。
+
+&emsp;&emsp;上面代码在桌面端和手机上，插入的都是图像文件foo.jpg。
 
 &emsp;&emsp;这种处理方法固然简单，但是有三大弊端。
 
@@ -1700,7 +1710,7 @@ console.log('hello world');
 
 &emsp;&emsp;第三步，浏览器根据当前设备的宽度，从sizes属性获得图像的显示宽度，然后从srcset属性找出最接近该宽度的图像，进行加载。
 
-&emsp;&emsp;&emsp;&emsp;假定当前设备的屏幕宽度是480px，浏览器从sizes属性查询得到，图片的显示宽度是33vw（即33%），等于160px。srcset属性里面，正好有宽度等于160px的图片，于是加载foo-160.jpg。
+&emsp;&emsp;假定当前设备的屏幕宽度是480px，浏览器从sizes属性查询得到，图片的显示宽度是33vw（即33%），等于160px。srcset属性里面，正好有宽度等于160px的图片，于是加载foo-160.jpg。
 
 &emsp;&emsp;如果省略sizes属性，那么浏览器将根据实际的图像显示宽度，从srcset属性选择最接近的图片。一旦使用sizes属性，就必须与srcset属性搭配使用，单独使用sizes属性是无效的。
 
@@ -1928,61 +1938,64 @@ console.log('hello world');
 <iframe src="https://www.example.com"
         width="100%" height="500" frameborder="0"
         allowfullscreen sandbox>
-  <p><a href="https://www.example.com">点击打开嵌入页面</a></p>
+  <p><a href="https://www.jianshu.com/u/01d07de71a9a">点击打开嵌入页面</a></p>
 </iframe>
 ```
-&emsp;&emsp;上面的代码在当前网页嵌入https://www.example.com ， 显示区域的宽度是100%，高度是500像素。如果当前浏览器不支持`<iframe>`，则会显示一个链接，让用户点击。
+&emsp;&emsp;上面的代码在当前网页嵌入https://www.jianshu.com/u/01d07de71a9a ， 显示区域的宽度是100%，高度是500像素。如果当前浏览器不支持`<iframe>`，则会显示一个链接，让用户点击。
 
 &emsp;&emsp;浏览器普遍支持`<iframe>`，所以内部的子元素可以不写。
 
 `<iframe>`的属性如下。
 
-allowfullscreen：允许嵌入的网页全屏显示，需要全屏 API 的支持，请参考相关的 JavaScript 教程。  
-frameborder：是否绘制边框，0为不绘制，1为绘制（默认值）。建议尽量少用这个属性，而是在 CSS 里面设置样式。  
-src：嵌入的网页的 URL。  
-width：显示区域的宽度。  
-height：显示区域的高度。  
-sandbox：设置嵌入的网页的权限，详见下文。  
-importance：浏览器下载嵌入的网页的优先级，可以设置三个值。high表示高优先级，low表示低优先级，auto表示由浏览器自行决定。  
-name：内嵌窗口的名称，可以用于`<a>`、`<form>`、`<base>`的target属性。  
-referrerpolicy：请求嵌入网页时，HTTP 请求的Referer字段的设置。参见`<a>`标签的介绍。
+- allowfullscreen：允许嵌入的网页全屏显示，需要全屏 API 的支持，请参考相关的 JavaScript 教程。
+- frameborder：是否绘制边框，0为不绘制，1为绘制（默认值）。建议尽量少用这个属性，而是在 CSS 里面设置样式。
+- src：嵌入的网页的 URL。
+- width：显示区域的宽度。
+- height：显示区域的高度。
+- sandbox：设置嵌入的网页的权限，详见下文。
+- importance：浏览器下载嵌入的网页的优先级，可以设置三个值。high表示高优先级，low表示低优先级，auto表示由浏览器自行决定。
+- name：内嵌窗口的名称，可以用于`<a>`、`<form>`、`<base>`的target属性。
+- referrerpolicy：请求嵌入网页时，HTTP 请求的Referer字段的设置。参见`<a>`标签的介绍。
 
 ## 2、sandbox 属性
 &emsp;&emsp;嵌入的网页默认具有正常权限，比如执行脚本、提交表单、弹出窗口等。如果嵌入的网页是其他网站的页面，你不了解对方会执行什么操作，因此就存在安全风险。为了限制`<iframe>`的风险，HTML 提供了sandbox属性，允许设置嵌入的网页的权限，等同于提供了一个隔离层，即“沙箱”。
 
 &emsp;&emsp;sandbox可以当作布尔属性使用，表示打开所有限制。
 ```html
-<iframe src="https://www.example.com" sandbox>
+<iframe src="https://www.jianshu.com/u/01d07de71a9a" sandbox>
 </iframe>
 ```
 &emsp;&emsp;sandbox属性可以设置具体的值，表示逐项打开限制。未设置某一项，就表示不具有该权限。
 
-allow-forms：允许提交表单。  
-allow-modals：允许提示框，即允许执行window.alert()等会产生弹出提示框的 JavaScript 方法。  
-allow-popups：允许嵌入的网页使用window.open()方法弹出窗口。  
-allow-popups-to-escape-sandbox：允许弹出窗口不受沙箱的限制。  
-allow-orientation-lock：允许嵌入的网页用脚本锁定屏幕的方向，即横屏或竖屏。  
-allow-pointer-lock：允许嵌入的网页使用 Pointer Lock API，锁定鼠标的移动。  
-allow-presentation：允许嵌入的网页使用 Presentation API。  
-allow-same-origin：不打开该项限制，将使得所有加载的网页都视为跨域。  
-allow-scripts：允许嵌入的网页运行脚本（但不创建弹出窗口）。  
-allow-storage-access-by-user-activation：允许在用户激动的情况下，嵌入的网页通过  
-Storage Access API 访问父窗口的储存。  
-allow-top-navigation：允许嵌入的网页对顶级窗口进行导航。  
-allow-top-navigation-by-user-activation：允许嵌入的网页对顶级窗口进行导航，但必须由用户激活。  
-allow-downloads-without-user-activation：允许在没有用户激活的情况下，嵌入的网页启动下载。  
-注意，不要同时设置allow-scripts和allow-same-origin属性，这将使得嵌入的网页可以改变或删除sandbox属性。
+- allow-forms：允许提交表单。
+- allow-modals：允许提示框，即允许执行window.alert()等会产生弹出提示框的 JavaScript 方法。
+- allow-popups：允许嵌入的网页使用window.open()方法弹出窗口。
+- allow-popups-to-escape-sandbox：允许弹出窗口不受沙箱的限制。
+- allow-orientation-lock：允许嵌入的网页用脚本锁定屏幕的方向，即横屏或竖屏。
+- allow-pointer-lock：允许嵌入的网页使用 Pointer Lock API，锁定鼠标的移动。
+- allow-presentation：允许嵌入的网页使用 Presentation API。
+- allow-same-origin：不打开该项限制，将使得所有加载的网页都视为跨域。
+- allow-scripts：允许嵌入的网页运行脚本（但不创建弹出窗口）。
+- allow-storage-access-by-user-activation：允许在用户激动的情况下，嵌入的网页通过
+- Storage Access API 访问父窗口的储存。
+- allow-top-navigation：允许嵌入的网页对顶级窗口进行导航。
+- allow-top-navigation-by-user-activation：允许嵌入的网页对顶级窗口进行导航，但必须由用户激活。
+- allow-downloads-without-user-activation：允许在没有用户激活的情况下，嵌入的网页启动下载。
+
+
+&emsp;&emsp;注意，不要同时设置allow-scripts和allow-same-origin属性，这将使得嵌入的网页可以改变或删除sandbox属性。
 
 ## 3、loading 属性
 &emsp;&emsp;`<iframe>`指定的网页会立即加载，有时这不是希望的行为。`<iframe>`滚动进入视口以后再加载，这样会比较节省带宽。
 
 &emsp;&emsp;loading属性可以触发`<iframe>`网页的懒加载。该属性可以取以下三个值。
 
-auto：浏览器的默认行为，与不使用loading属性效果相同。
-lazy：`<iframe>`的懒加载，即将滚动进入视口时开始加载。
-eager：立即加载资源，无论在页面上的位置如何。
+- auto：浏览器的默认行为，与不使用loading属性效果相同。
+- lazy：`<iframe>`的懒加载，即将滚动进入视口时开始加载。
+- eager：立即加载资源，无论在页面上的位置如何。
+
 ```html
-<iframe src="https://example.com" loading="lazy"></iframe>
+<iframe src="https://www.jianshu.com/u/01d07de71a9a" loading="lazy"></iframe>
 ```
 &emsp;&emsp;上面代码会启用`<iframe>`的懒加载。
 
